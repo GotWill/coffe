@@ -92,17 +92,12 @@ export const CoffeContextProvider = ({ children }: CoffeContextProviderProps) =>
     }
 
     function clearPayment(){
-        console.log("aqui eu limppo")
         setPayment('')
     }
 
 
     function addNewInfoUser(user: userInfoProps) {
-
-        console.log("adddd", user)
-
         dispatchUser(addInfoUserAction(user))
-
     }
     function deleteUserInfo() {
         dispatchUser(DELETE_INFO())

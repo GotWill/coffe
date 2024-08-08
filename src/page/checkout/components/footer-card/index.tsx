@@ -16,16 +16,13 @@ const FooterCard = () => {
 
     const btnIsDisabled = userInfo.city && userInfo.uf && userInfo.neighborhood && userInfo.number && userInfo.road;
 
-    console.log("aqu", userInfo)
-
     
     const navigate = useNavigate()
 
     function handleToPageSuccess(){
-        navigate('/success')
+        navigate(`/success?payment=${payment}`)
         clearCoffe()
         clearPayment()
-        
     }
     
 
