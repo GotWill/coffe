@@ -93,7 +93,7 @@ const Checkout = () => {
     return (
         <CheckoutContainer>
             <div className="flex">
-                <h3>Complete seu pedido {numberAdress}</h3>
+                <h3>Complete seu pedido</h3>
                 <FormContainer>
                     <div className="header">
                         <MapPin />
